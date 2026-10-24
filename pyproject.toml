@@ -1,0 +1,10 @@
+[project]
+name = "bachelor26"
+version = "0.1.0"
+description = "Simulation code for cost-aware Slurm-style HPC scheduling."
+requires-python = ">=3.10"
+dependencies = []
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

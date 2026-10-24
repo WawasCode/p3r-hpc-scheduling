@@ -1,0 +1,48 @@
+
+high load, policy=0.0 (10 seeds)
+  nodes   jobs  never-started  max-wait(h)  median-wait(h)  mean-wait(h)
+      1  20348           2954         1838             413           491
+      2  14455           2100         1865             468           526
+      4   8887           1394         2382             589           634
+      8   4899            834         2481             744           795
+     10   1625            317         2413             884           946
+
+high load, policy=1.0 (10 seeds)
+  nodes   jobs  never-started  max-wait(h)  median-wait(h)  mean-wait(h)
+      1  20348           2596         1698             301           421
+      2  14455           1850         1803             348           453
+      4   8887           1258         2122             456           548
+      8   4899            792         2453             627           697
+     10   1625            288         2364             788           840
+
+high load, policy=easy (10 seeds)
+  nodes   jobs  never-started  max-wait(h)  median-wait(h)  mean-wait(h)
+      1  20348           3422         2074             575           662
+      2  14455           2477         2092             638           707
+      4   8887           1512         2099             682           753
+      8   4899            839         2067             718           782
+     10   1625            283         2061             737           797
+
+medium load, policy=0.0 (10 seeds)
+  nodes   jobs  never-started  max-wait(h)  median-wait(h)  mean-wait(h)
+      1  12432              0           69               2             4
+      2   8808              0          101               5             8
+      4   5294              0          268              10            18
+      8   3054              1          626              38            63
+     10   1004              2          674              89           117
+
+medium load, policy=1.0 (10 seeds)
+  nodes   jobs  never-started  max-wait(h)  median-wait(h)  mean-wait(h)
+      1  12432              0           76               0             1
+      2   8808              0           76               0             1
+      4   5294              0          123               0             4
+      8   3054              0          355               0            13
+     10   1004              0          495               0            25
+
+medium load, policy=easy (10 seeds)
+  nodes   jobs  never-started  max-wait(h)  median-wait(h)  mean-wait(h)
+      1  12432              0          179               0             5
+      2   8808              0          217               0             7
+      4   5294              0          250               0            13
+      8   3054              0          277               0            17
+     10   1004              0          295               0            19

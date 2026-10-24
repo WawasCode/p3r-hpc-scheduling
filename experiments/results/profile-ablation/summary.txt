@@ -1,0 +1,4 @@
+low    lambda=0.0: price reduction vs EASY  profile  28.8%  flat  27.5%  (profile - flat = 1.3 +- 0.1 pts) | violations 1.4% vs 1.4% | suspended job-h 19718 vs 19936
+low    lambda=0.5: price reduction vs EASY  profile   7.6%  flat   6.9%  (profile - flat = 0.6 +- 0.2 pts) | violations 0.5% vs 0.5% | suspended job-h 5718 vs 5727
+medium lambda=0.0: price reduction vs EASY  profile  12.7%  flat  12.2%  (profile - flat = 0.5 +- 0.5 pts) | violations 26.1% vs 25.7% | suspended job-h 25491 vs 25752
+medium lambda=0.5: price reduction vs EASY  profile   5.4%  flat   4.9%  (profile - flat = 0.5 +- 0.2 pts) | violations 10.8% vs 11.1% | suspended job-h 10596 vs 10675
