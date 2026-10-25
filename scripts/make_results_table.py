@@ -11,7 +11,7 @@ import sys
 from collections import defaultdict
 
 COLS = [("mean_paid_price_eur_per_mwh", 1), ("scheduled_jobs", 0), ("qos_violation_rate_percent", 1),
-        ("avg_wait_h", 1), ("p95_wait_h", 0), ("suspended_job_hours", 0)]
+        ("avg_wait_h", 1), ("p95_wait_h", 0), ("avg_response_h", 1), ("suspended_job_hours", 0)]
 ORDER = ["FCFS", "EASY", "$\\lambda=0$", "$\\lambda=0.1$", "$\\lambda=0.25$", "$\\lambda=0.5$", "$\\lambda=1$"]
 
 
@@ -25,9 +25,9 @@ def main(runs: str, out: str) -> None:
     for r in csv.DictReader(open(runs, newline="")):
         v = "FCFS" if r["policy"] == "fcfs" else ("EASY" if r["policy"] == "easy_backfill" else f"$\\lambda={float(r['delay_penalty_lambda']):g}$")
         g[(r["load_level"], v)].append(r)
-    lines = ["\\begin{tabular}{@{}llrrrrrr@{}}", "\\toprule",
-             "Load & Policy & Paid price & Completed & QoS viol. & Mean wait & p95 wait & Suspended \\\\",
-             " & & (EUR/MWh) & (jobs) & (\\%) & (h) & (h) & (job-h) \\\\", "\\midrule"]
+    lines = ["\\begin{tabular}{@{}llrrrrrrr@{}}", "\\toprule",
+             "Load & Policy & Paid price & Completed & QoS viol. & Mean wait & p95 wait & Mean resp. & Suspended \\\\",
+             " & & (EUR/MWh) & (jobs) & (\\%) & (h) & (h) & (h) & (job-h) \\\\", "\\midrule"]
     for load in ["low", "medium", "high", "mixed"]:
         for i, v in enumerate(ORDER):
             cells = []

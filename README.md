@@ -31,8 +31,8 @@ paired per seed.
 | Folder | Thesis |
 |---|---|
 | `main-full-2024-v4` | Main experiment, full year 2024 (Sections 5.4–5.6, Table 5.3, Figures 5.2–5.3, Section 6.2) |
-| `main-60d-winter-v4` | 60-day winter window, January–February (Section 5.7, Appendix B) |
-| `main-60d-summer-v4` | 60-day summer window, July–August (Section 5.7) |
+| `main-60d-winter-v4` | 60-day winter window, January–February (Section 5.7, Table B.1) |
+| `main-60d-summer-v4` | 60-day summer window, July–August (Section 5.7, Table B.2) |
 | `dev-seeds-60d-winter-v4` | Winter window with a second set of seeds, 42–51 (Section 5.7) |
 | `priority-order-check` | Admission order: tie-breaking and arrival order (Sections 5.5, 5.7) |
 | `profile-ablation` | P3R with a profile-blind planner (Section 5.7) |
