@@ -16,6 +16,8 @@ All policies run on identical synthetic workloads and on the 2024 hourly
 day-ahead price trace for Germany/Luxembourg, and every comparison is
 paired per seed.
 
+The thesis itself is in [`Khalatyan_Bachelorarbeit.pdf`](Khalatyan_Bachelorarbeit.pdf).
+
 ## Contents
 
 | Path | What it is |
@@ -25,6 +27,7 @@ paired per seed.
 | `data/prices/` | SMARD day-ahead prices DE/LU 2024, hourly, EUR/MWh |
 | `scripts/` | Experiment runners, robustness checks, table and figure scripts |
 | `experiments/results/` | Results of every run reported in the thesis |
+| `Khalatyan_Bachelorarbeit.pdf` | The thesis |
 
 ### Results and where the thesis uses them
 
